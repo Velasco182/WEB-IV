@@ -29,7 +29,7 @@ export const usuario_Mongoose = new Schema({
     "rhUsuario": String,
     "rhUsuario": String,
     "numeroDocumento": String,
-    "parentezcoUsuario": String,
+    "rolUsuario": {"Tutor": String, "Menor": String},
 }, { collection: "usuario" })
 
 export const usuario_MongooseModel = model("usuario_Mongoose", usuario_Mongoose);

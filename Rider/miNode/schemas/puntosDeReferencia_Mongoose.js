@@ -16,7 +16,7 @@ export const puntosDeReferencia_Mongoose = new Schema({
     "_id": mongoose.ObjectId,
     "nombrePunto": String,
     "direccionPunto": String,
-    "georeferencia": String,
+    "georeferencia": {"latitud": String, "longitud": String},
 }, { collection: "puntosDeReferencia" })
 
 export const puntosDeReferencia_MongooseModel = model("puntosDeReferencia_Mongoose", puntosDeReferencia_Mongoose);

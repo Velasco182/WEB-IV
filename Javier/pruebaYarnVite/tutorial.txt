@@ -1,0 +1,35 @@
+1. Para crear el proyecto con React: npx create-react-app pruebaconfiapp (Obligatorio minúsculas).
+2. npm start
+3. 
+--------------------------------------
+TUTORIAL REACT, RUTAS PROTEGIDAS CON REACT ROUTER V6
+
++ Proteccion de Rutas
+https://www.youtube.com/watch?v=42tFXd1PdCk
+
+
++ Puertas de escape
+https://es.react.dev/learn/escape-hatches
+
+https://keepcoding.io/blog/proteccion-de-rutas-con-react-router/
+
+1. Se usa vite o create-react-app: npm create vite
+- name: react-router-protected -> React -> JavaScript - Proyecto creado
+
+2. En la carpeta del proyecto: npm i
+3. npm i react-router-dom
+(8 vulnerabilities (2 moderate, 6 high)       
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force)
+4. En App.jsx, dentro de src:   eliminar contenido e instalar dos extensiones es7+ react/redux y intellicode, después dar rfce y eliminar la importación de React.
+5. En App.css e index.css : eliminar contenido, solo dejar color de fonde en index.
+6. Ejecutar proyecto:  npm run dev
+7. Crear enrutador de React router, importamos desde react-router-dom, se quita el contenido y ponemos un <BrowserRouter> en lugar del div dentro de la funcion App(). 
+8. También se van a poner la multiples rutas agrupadas, para eso importamos y creamos un elemento hijo <Routes>.
+9. También existe un elemento Route, que tiene como propiedades el nombre: path y un element, que es lo que va a mostrar.
+9. Creamos la carpeta "pages" denrtro de src para crear las multiples páginas. Creamos dentro el archivo index.jsx
+10. Importar desde pages en el archivo App.jsx, la o las páginas que queremos mostrar importando la funcion que contiene la vista.
+11. El elemento link redicciona a diferentes rutas, se importa desde react-router-dom, para esto creamos la funcion Navigation.
+12. minuto 30:22
+---------------------------------------

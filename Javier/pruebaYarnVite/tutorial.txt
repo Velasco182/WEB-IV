@@ -32,4 +32,5 @@ To address all issues (including breaking changes), run:
 10. Importar desde pages en el archivo App.jsx, la o las páginas que queremos mostrar importando la funcion que contiene la vista.
 11. El elemento link redicciona a diferentes rutas, se importa desde react-router-dom, para esto creamos la funcion Navigation en App.jsx.
 12. https://www.youtube.com/watch?v=-bI0diefasA&ab_channel=Fazt Tutorial de app Nodejs y Mongodb Aplicación completa (Login, Registro,CRUD, ES6+, y más) (OJO)
+13. Lanzar servidor: npm run dev
 ---------------------------------------

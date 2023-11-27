@@ -35,25 +35,16 @@ function App() {
             )
         }
         
-        
-
         <Routes>
             {/* Ruta inicial */}
             <Route index element={<Landing/>}/>
 
             <Route path='/landing' element={<Landing/>}/>
 
-            <Route path='/home' element={
-                    <ProtectedRoute user={user} redirectTo='/'>
-                        <Home/>
-                    </ProtectedRoute>
-                }/>
-
-            <Route path='/dashboard' element={
-                    <ProtectedRoute user={user} redirectTo='/'>
-                        <DashBoard/>
-                    </ProtectedRoute>
-                }/>
+            <Route element={ <ProtectedRoute user={user} /> }/>
+                <Route path='/home' element={<Home/>}/>
+                <Route path='/dashboard' element={<DashBoard/>}/>                
+            <Route/>
 
             <Route path='/analytics' element={<Analytics/>}/>
 

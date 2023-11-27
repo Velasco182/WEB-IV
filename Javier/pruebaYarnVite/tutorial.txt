@@ -31,5 +31,5 @@ To address all issues (including breaking changes), run:
 9. Creamos la carpeta "pages" denrtro de src para crear las multiples páginas. Creamos dentro el archivo index.jsx
 10. Importar desde pages en el archivo App.jsx, la o las páginas que queremos mostrar importando la funcion que contiene la vista.
 11. El elemento link redicciona a diferentes rutas, se importa desde react-router-dom, para esto creamos la funcion Navigation.
-12. minuto 30:22
+12. minuto 31:13
 ---------------------------------------

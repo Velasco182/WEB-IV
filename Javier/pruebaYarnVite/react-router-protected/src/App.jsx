@@ -12,7 +12,10 @@ function App() {
         //request dom
         setUser({
             id: 1,
-            name: "Jhon"
+            name: "Jhon", 
+            ///usuario tiene permiso de analizar, viene desde el backend
+            permissions: ['analize'],
+            roles: ['admin']
         })
     }
 
@@ -41,14 +44,37 @@ function App() {
 
             <Route path='/landing' element={<Landing/>}/>
 
-            <Route element={ <ProtectedRoute user={user} /> }/>
+            {/* Transforma la variable en boolean (!!), si user existe en true, sino es false*/}
+            <Route element={ <ProtectedRoute isAllowed={!!user} /> }/>
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/dashboard' element={<DashBoard/>}/>                
             <Route/>
 
-            <Route path='/analytics' element={<Analytics/>}/>
+            <Route path='/analytics' element={
+                // Compruebo si el usuario exite e inclute analize
+                <ProtectedRoute 
+                    isAllowed={!!user && user.permissions.includes('analize')} 
+                    redirectTo='/home'>
 
-            <Route path='/admin' element={<Admin/>}/>
+                    <Analytics/>
+
+                </ProtectedRoute>
+
+            }/>
+            
+            <Route path='/admin' element={
+            
+                <ProtectedRoute 
+                    isAllowed={!!user && user.roles.includes('admin')}
+                    redirectTo='/home'>
+
+                    <Admin/>
+
+                </ProtectedRoute> 
+
+            }/>
+
+
         </Routes>
     
     </BrowserRouter>

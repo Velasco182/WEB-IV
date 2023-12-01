@@ -1,0 +1,5 @@
+1. Crear proyecto de react: npx create-react-app confiapp
+2. Cambiar a la acerpeta del proyecto: cd .\confiapp\
+3. Instalar yarn de manera global: npm install --global yarn
+4. Comprobar versión de yarn:  yarn --version (No me funcionó por problemas con el software, seguí este tutorial: Abrir cmd como admin -> Get-ExecutionPolicy -List, todo undefined -> Set-ExecutionPolicy Unrestricted, listo)
+5. Instalar bootstrap: por npm "npm install react-bootstrap bootstrap" y por yarn "yarn add react-bootstrap bootstrap"

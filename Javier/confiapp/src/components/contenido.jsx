@@ -7,7 +7,7 @@ function Contenido() {
             <div className="modal-content">
                 <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLabel">
-                    <img src="mages/Iconoverde.png" id="img" />
+                    <img src="images/Iconoverde.png" id="img" />
                 </h5><h4 className="logo me-auto"><a href="landing.html"> CONFIAPP</a></h4>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                 </div>
@@ -129,7 +129,7 @@ function Contenido() {
         <main id="main">
             <p>
             </p><h2 id="mitad">Descubre nuestro funcionamiento <br />
-            <a href="#bajadita"> <img src="iconos/flechita.png" /></a>  </h2>
+            <a href="#bajadita"> <img src="assets/images/flechita.png" /></a>  </h2>
             <p />
             <hr id="bajadita" className="blanquito" />
             {/* ======= About Section ======= */}
